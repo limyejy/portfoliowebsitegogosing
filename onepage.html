@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>원페이지 스크롤</title>
+<style>
+* { margin:0; padding:0; }
+header { background:#ffc; height:40px; }
+header ul li { float:left; margin-right:100px; list-style:none; line-height:40px; }
+section { min-height:500px; color:#fff; }
+#cont1 { background:#333; height:1200px; }
+#cont2 { background:#666; height:1700px; }
+#cont3 { background:#999; height:800px; }
+#cont4 { background:#aaa; height:1000px; }
+#cont5 { background:#ccc; height:1500px; }
+aside { width:50px; height:50px;  position:fixed; right:100px; bottom:100px; border:1px solid #fff; text-align:center; line-height:50px; }
+
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.scrollTo-min.js"></script>
+<script>
+var scrollTab = function (sObj) {
+  $.scrollTo($("#" + sObj), 1000);
+}
+</script>
+</head>
+
+<body>
+<header>
+	<ul>
+    	<li><a href="javascript:scrollTab('cont1');">MENU1</a></li>
+        <li><a href="javascript:scrollTab('cont2');">MENU2</a></li>
+        <li><a href="javascript:scrollTab('cont3');">MENU3</a></li>
+        <li><a href="javascript:scrollTab('cont4');">MENU4</a></li>
+        <li><a href="javascript:scrollTab('cont5');">MENU5</a></li>
+    </ul>
+</header>
+<div id="cont1">
+	<h1>콘텐츠1의 내용입니다.</h1>
+</div>
+<div id="cont2">
+	<h1>콘텐츠2의 내용입니다.</h1>
+</div>
+<section id="cont3">
+	<h1>콘텐츠3의 내용입니다.</h1>
+</section>
+<section id="cont4">
+	<h1>콘텐츠4의 내용입니다.</h1>
+</section>
+<section id="cont5">
+	<h1>콘텐츠5의 내용입니다.</h1>
+</section>
+<aside>
+	<a href="#">TOP</a>
+</aside>
+
+
+
+</body>
+</html>

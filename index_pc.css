@@ -89,7 +89,7 @@ a:hover{
 
 
 #gap_25_75{
-    width: 25px;
+    width: 2rem;
     height: 75px;
 }
 
@@ -97,13 +97,13 @@ a:hover{
 #gap_285_75{
     position: relative;
     clear: both;
-    width: 120px;
+    width: 8rem;
     height: 75px;
 }
 
 
  #menu_each{
-    width: 70px;
+    width: 4rem;
     height: 75px;
     line-height: 75px;
     font-size: 0.8rem;
@@ -115,7 +115,7 @@ a:hover{
 #menu_each_span_m{display: none;}
 
 #menu_each_long{
-    width: 110px;
+    width: 5rem;
     height: 75px;
     line-height: 75px;
     font-size: 0.8rem;
@@ -125,6 +125,8 @@ a:hover{
 #menu_each_span{
     line-height: 80px;
 }
+
+
 
 /*메인 슬라이드*/
 /* Slideshow container */
@@ -153,7 +155,7 @@ a:hover{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -120px;
+    margin-top: -5rem;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -174,6 +176,7 @@ a:hover{
     background-color: rgba(0,0,0,0.8);
   }
   
+
   /* Caption text */
   .text {
     color: #f2f2f2;
@@ -266,22 +269,140 @@ a:hover{
     display: none;
 }
 
+.side_bar_plus{
+    position: absolute;
+    width: 9rem;
+    height: 155px;
+    line-height: 30px;
+    border-radius: 5px;
+    z-index: 999;
+    top: 0;
+    margin-top:-7rem;
+    right: -0.4rem;
+    background-color: rgb(255, 255, 255,0.5);
+    border: 1px solid burlywood;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    opacity: 0;
+}
+
+#close{
+    border: none;
+    background-color: rgb(255, 255, 255,0.0);
+    margin-left: 6.5rem;
+    margin-top: -8rem;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0.7;
+}
+
+#plus_text_each{
+    font-family: 'NanumSquareNeo-Variable';
+    vertical-align: center;
+    width: 8rem;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+#plus_emj{
+    font-size: 15pt;
+    line-height: 30px;
+}
+
+.side_bar{
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    border-radius: 50px;
+    z-index: 999;
+    top: 50%;
+    margin-top:-50px;
+    right: 50px;
+    
+}
+
+.side_bar ul{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    display: inline;
+    
+}
+
+.side_bar ul li{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+    display:inline;
+}
+
+.side_bar ul li {
+    position:relative;
+    float:left;
+    width:100%;
+    height:55px;
+    line-height:55px;
+    text-align:center;
+    font-size:9.5pt;
+}
+
+
+#m_04{
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    line-height: 60px;
+    background-color: white;
+    border: 2px solid #bfb29f;
+    border-radius: 10%;
+}
+
+#m_01{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color:  #bfb29f;
+    font-size: 20pt;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.plus{
+    color: black;
+}
+
+.quickmenu ul li:last-child {border-bottom:0;}
+
+
+#m_03:hover #text{opacity: 0.5;}
+#m_03:hover #search_btn{opacity: 0.5;}
+
     /*상단 이미지 4개 시작 (340*280), 텍스트 (h:50px-2줄 =100px)----*/
     section.sec_01_all{
         position: relative;
         clear: both;
-        width: 1550px;
+        width: 100%;
         height: 450px;
-        overflow: hidden;
-        margin: 0 auto;
+        padding: 0 auto;
+        display: flex;
+        overflow-x: hidden;
+        justify-content: center;
     }
 
         .sec_01_all>.sec_01_box_all{
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            justify-content: center;
+            
             gap: 15px;
-            width: 1550px;
+            width: 90%;
             height: 450px;
         }
 
@@ -361,6 +482,8 @@ a:hover{
 }
 
 .sec_01_all_m{display: none;}
+
+
 
         /*Daily best PC 시작*/
         .daily_best_title{
@@ -684,6 +807,31 @@ a:hover{
 
                         }
 
+                        .swiper-slide{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            margin: 0 auto;
+                            padding: 0 auto;
+                        }
+                            .swiper_product_each{
+                                width:1470px; 
+                                height:680px;
+                                margin: 0 auto;
+                                padding: 0 auto;
+                                overflow-x: hidden;
+                        }
+
+                        .swiper_product_each_2{
+                            width:1470px; 
+                            height:680px;
+                            margin: 0 auto;
+                            padding: 0 auto;
+                            overflow-x: hidden;
+                    }
+                    
+                        
                         
                         
 
@@ -697,22 +845,31 @@ a:hover{
 .middle_banner{
     position: relative;
     clear: both;
-    width: 100%;
+    width: 1470px;
     height: 260px;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
+    gap: 50px;
 
 }
 
-#middle_banner_box{
+.middle_banner_box{
     position: relative;
-    width: 1470px;
-    height: 260px;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-around;
     
 }
+
+.swiper_middle_banner{
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px;
+}
+
 
 
 
@@ -971,6 +1128,7 @@ a:hover{
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
+        background-color: #eae7dd;
         
     }
     
@@ -1009,25 +1167,9 @@ a:hover{
 
 
 
-#arrow_left{
-    font-size: 2rem;
-    text-align: center;
-    padding-left: 10px;
-    color: #5f5f5f;
-}
-
-#arrow_right{
-    font-size: 2rem;
-    text-align: center;
-    padding-left: 10px;
-    color: #5f5f5f;
-}
-
 .swiper-wrapper{
     width: 100%;
     height: 200px;
-    background-color: #eae7dd;
-
 
 }
 
@@ -1039,7 +1181,6 @@ a:hover{
     justify-content: center;
     margin: 0 auto;
     padding: 0 auto;
-        background-color: #eae7dd;
 }
 	.swiper{
         width:100%; 
@@ -1047,7 +1188,6 @@ a:hover{
         margin: 0 auto;
         padding: 0 auto;
 }
-
 
 
 

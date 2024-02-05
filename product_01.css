@@ -1,14 +1,24 @@
-*{}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .main_menu_all{
     font-family: 'NanumSquareNeo-Variable';
     font-size: 15pt;
+    
 }
 
 .product_all{
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
-
 
 
 ul, ol, li{
@@ -80,7 +90,7 @@ a:hover{
 
 
 #gap_25_75{
-    width: 25px;
+    width: 2rem;
     height: 75px;
 }
 
@@ -88,13 +98,13 @@ a:hover{
 #gap_285_75{
     position: relative;
     clear: both;
-    width: 120px;
+    width: 8rem;
     height: 75px;
 }
 
 
  #menu_each{
-    width: 70px;
+    width: 4rem;
     height: 75px;
     line-height: 75px;
     font-size: 0.8rem;
@@ -106,7 +116,7 @@ a:hover{
 #menu_each_span_m{display: none;}
 
 #menu_each_long{
-    width: 110px;
+    width: 5rem;
     height: 75px;
     line-height: 75px;
     font-size: 0.8rem;
@@ -118,11 +128,12 @@ a:hover{
 }
 
 
+
 .product_all{
     position: relative;
     margin: 0 auto;
     padding: 0 auto;
-    width: 100%;
+    width:100rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -647,6 +658,14 @@ a:hover{
         justify-content: center;
         margin-left: -0.5px;
         margin-top: 2rem;
+    }
+
+    .img_wrap{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-self: center;
+        overflow-x: hidden;
+        margin-left: -10rem;
     }
     .footer_box_up{
         font-family: 'Roboto', sans-serif;

@@ -16,8 +16,29 @@
     <!--css-->        
     <link href="./index_pc.css" type="text/css" rel="stylesheet">
     <link href="./index_mob.css" type="text/css" rel="stylesheet">
+
+    <!--제이쿼리-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="./jquery-3.6.0 (1).js"></script>
+    <script src="./jquery-3.6.0.min (1).js"></script>
+    <script src="./jquery-ui.min (1).js"></script>
+    <script src="./jquery-ui-1.10.3.custom.min (1).js"></script>
+    <script type="text/javascript" src="./jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./jquery.scrollTo-min.js"></script>
+    
+    
+    <script type="text/javascript">
+
+        var scrollTab = function (sObj) {
+        
+          $.scrollTo($("#" + sObj), 1000);
+        
+        }
+        
+    </script>
         
 </head>
 <body>
@@ -228,6 +249,66 @@
         </div>
     </a> 
 </div>
+<!--사이드바-->
+
+
+<div class="side_bar">
+    <ul>
+        <li>
+            <div class="side_bar_plus">
+                <button type="button" onclick="csschange()" id="close">
+                    <p class="plus">✖</p>
+                </button>
+                <div class="side_bar_plus_all">
+                    <div id="plus_text_each">
+                        <span class="material-symbols-outlined" id="plus_emj">
+                            shopping_cart
+                            </span>                       
+                        <p id="plus_text">    주 문 조 회</p>
+                    </div>
+                    <div id="plus_text_each">
+                        <span class="material-symbols-outlined" id="plus_emj">
+                            favorite
+                            </span>                       
+                        <p id="plus_text">위시리스트</p>
+                    </div>
+                    <div id="plus_text_each">
+                        <span class="material-symbols-outlined" id="plus_emj">
+                            support_agent
+                            </span>                       
+                        <p id="plus_text">    고 객 센 터</p>
+                    </div>
+                    <div id="plus_text_each">
+                        <span class="material-symbols-outlined" id="plus_emj">
+                            maps_ugc
+                            </span>                       
+                        <p id="plus_text">    카 톡 상 담</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <button type="button" onclick="csschange()" id="m_01">
+                <p class="plus"> +</p>
+            </button>
+        </li>
+
+
+        <li>
+            <div id="m_04">
+                <a href="javascript:scrollTab('top_banner_text');">
+                    <span class="material-symbols-outlined">
+                        expand_less
+                    </span>     
+                </a>
+            <a href="javascript:scrollTab('footer_box_each');">
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span>     
+            </a>
+        </li>
+  </ul>
+</div>
 <!--메인이미지 슬라이드 시작-->
 <div class="slideshow-container">
 
@@ -396,155 +477,310 @@
     </div>
 </div>
 
-<section class="product_row_all">
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="./product_01.html">
-            <img src="./daily_best_img_1gif.gif" width="340" alt="340X460" id="row_01">
-        </a>
-    </p>
-
-    <div id="p_box_font_all">
-        <p id="p_box_font_01">
-            잘 빠진 라인 예쁜 핏 딱 떨어지는 일자핏 데님팬츠!
-
-        </p>
-
-
-        <div class="sale_box">
-            <p id="p_box_font_03">
-               <strike>20,900원</strike>
-                &nbsp;<p id="sale_percent">15%</p>&nbsp; 
-                <p id="price">25,400원</p>
-            </p>
+    <div class="swiper_product_each">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="./product_01.html">
+                            <img src="./daily_best_img_1gif.gif" width="340" alt="340X460" id="row_01">
+                        </a>
+                    </p>
+            
+                    <div id="p_box_font_all">
+                        <p id="p_box_font_01">
+                            잘 빠진 라인 예쁜 핏 딱 떨어지는 일자핏 데님팬츠!
+            
+                        </p>
+            
+            
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>20,900원</strike>
+                                &nbsp;<p id="sale_percent">15%</p>&nbsp; 
+                                <p id="price">25,400원</p>
+                            </p>
+                        </div>
+            
+            
+                        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="color_box_daily_01.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_01.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_gif.gif" width="340" alt="340X460" id="row_02">
+                        </a>
+                    </p>
+            
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            [9만장 돌파💘] 사계절 플렉시블 프리 와이드 데님 팬츠
+            
+                        </p>
+            
+            
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                        <strike>29,900원</strike>
+                            &nbsp;<p id="sale_percent">23%</p>&nbsp; 
+                            23,000원
+                        </p>
+                        </div>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="color_box_daily_02.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_02.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_3.gif" width="340" alt="340X460" id="row_03">
+                        </a>
+                    </p>
+            
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            [러블리 여친룩💗]큐티 리본 무드 BL 프릴 블라우스
+                        </p>
+            
+            
+            
+                        <p id="p_box_font_03">
+                            29,800원
+                        </p>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_daily_03.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_03.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_4.gif" width="340" alt="340X480" id="row_04">
+                        </a>
+                    </p>
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            플리츠 코튼 밴딩 스트라이프 포인트 하객룩 원피스
+                        </p>
+            
+            
+                        <p id="p_box_font_03">
+                            39,900원
+                        </p>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_daily_04.png" >
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_04.png">
+            
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                        <span class="material-symbols-outlined" id="direction">
+                        
+                            chevron_right
+                            </span>
+                    </div>
+                    
+                    
+                </div>
+            
+                </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="./product_01.html">
+                            <img src="./daily_best_img_1gif.gif" width="340" alt="340X460" id="row_01">
+                        </a>
+                    </p>
+            
+                    <div id="p_box_font_all">
+                        <p id="p_box_font_01">
+                            잘 빠진 라인 예쁜 핏 딱 떨어지는 일자핏 데님팬츠!
+            
+                        </p>
+            
+            
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>20,900원</strike>
+                                &nbsp;<p id="sale_percent">15%</p>&nbsp; 
+                                <p id="price">25,400원</p>
+                            </p>
+                        </div>
+            
+            
+                        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="color_box_daily_01.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_01.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_gif.gif" width="340" alt="340X460" id="row_02">
+                        </a>
+                    </p>
+            
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            [9만장 돌파💘] 사계절 플렉시블 프리 와이드 데님 팬츠
+            
+                        </p>
+            
+            
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                        <strike>29,900원</strike>
+                            &nbsp;<p id="sale_percent">23%</p>&nbsp; 
+                            23,000원
+                        </p>
+                        </div>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="color_box_daily_02.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_02.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_3.gif" width="340" alt="340X460" id="row_03">
+                        </a>
+                    </p>
+            
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            [러블리 여친룩💗]큐티 리본 무드 BL 프릴 블라우스
+                        </p>
+            
+            
+            
+                        <p id="p_box_font_03">
+                            29,800원
+                        </p>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_daily_03.png">
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_03.png">
+            
+                    </div>
+                </div>
+            
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./daily_best_img_4.gif" width="340" alt="340X480" id="row_04">
+                        </a>
+                    </p>
+            
+                    <div id="p_box_font_all">
+            
+                        <p id="p_box_font_01">
+                            플리츠 코튼 밴딩 스트라이프 포인트 하객룩 원피스
+                        </p>
+            
+            
+                        <p id="p_box_font_03">
+                            39,900원
+                        </p>
+            
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_daily_04.png" >
+                            </content>
+            
+                        </p>
+            
+                        <p id="p_box_font_04">
+                            <img src="./daily_rate_04.png">
+            
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                        <span class="material-symbols-outlined" id="direction">
+                        
+                            chevron_right
+                            </span>
+                    </div>
+                </div>
+                </section>
+           </div>
+          </div>  
         </div>
-
-
-        
-        <p id="p_box_color">
-            <content>
-                <img src="color_box_daily_01.png">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./daily_rate_01.png">
-
     </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./daily_best_img_gif.gif" width="340" alt="340X460" id="row_02">
-        </a>
-    </p>
-
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            [9만장 돌파💘] 사계절 플렉시블 프리 와이드 데님 팬츠
-
-        </p>
-
-
-        <div class="sale_box">
-        <p id="p_box_font_03">
-           <strike>29,900원</strike>
-            &nbsp;<p id="sale_percent">23%</p>&nbsp; 
-            23,000원
-        </p>
-        </div>
-
-        <p id="p_box_color">
-            <content>
-                <img src="color_box_daily_02.png">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./daily_rate_02.png">
-
-    </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./daily_best_img_3.gif" width="340" alt="340X460" id="row_03">
-        </a>
-    </p>
-
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            [러블리 여친룩💗]큐티 리본 무드 BL 프릴 블라우스
-        </p>
-
-
-
-        <p id="p_box_font_03">
-            29,800원
-        </p>
-
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_daily_03.png">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./daily_rate_03.png">
-
-    </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./daily_best_img_4.gif" width="340" alt="340X480" id="row_04">
-        </a>
-    </p>
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            플리츠 코튼 밴딩 스트라이프 포인트 하객룩 원피스
-        </p>
-
-
-        <p id="p_box_font_03">
-            39,900원
-        </p>
-
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_daily_04.png" >
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./daily_rate_04.png">
-
-    </div>
-    <div class="see_all">
-        <p id="see_all_text">전체보기</p>
-        <span class="material-symbols-outlined" id="direction">
-        
-            chevron_right
-               </span>
-       </div>
-    
-    
-</div>
-
-</section>
 
 
 <!--Today 5%-->
@@ -557,145 +793,295 @@
     </div>
 </div>
 
-<section class="product_row_all">
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./today_img_01.gif" width="340" alt="340X340" id="today_01">
-        </a>
-    </p>
 
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            바로 지금, 간절기에 딱! all color🖤 FREE 티셔츠
-
-        </p>
-
-        <p id="p_box_font_03">
-            19,800원
-        </p>
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_today_01.png">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./today_rate_01.png">
-
-    </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./today_img_02.gif" width="340" alt="340X480" id="today_02">
-        </a>
-    </p>
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            개강룩❤️‍🔥 기본핏 와이셔츠와 데님팬츠 세트 할인!
-
-        </p>
-
-        <div class="sale_box">
-        <p id="p_box_font_03">
-           <strike>59,900원</strike>
-            &nbsp;<p id="sale_percent">23%</p>&nbsp; 46,000원
-        </p>
-        </div>
-
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_today_02.png">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./today_rate_02.png">
-
-    </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./today_img_03.gif" width="340" alt="340X340"  id="today_03">
-        </a>
-    </p>
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            보장된 핏! 라인을 살리는 데님 스키니진
-        </p>
-
-
-        <p id="p_box_font_03">
-            39,800원
-        </p>
-
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_today_03.png" width="25" alt="25*10">
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./today_rate_03.png">
-
-    </div>
-</div>
-
-<div class="product_col_each">
-    <p id="p_box_img">
-        <a href="#">
-            <img src="./today_img_04.gif" width="340" alt="340X340" id="today_04">
-        </a>
-    </p>
-
-    <div id="p_box_font_all">
-
-        <p id="p_box_font_01">
-            크롭 포인트 단가라 티셔츠(긴팔, all color)
-        </p>
-
-        <div class="sale_box">
-            <p id="p_box_font_03">
-               <strike>19,900원</strike>
-                &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
-            </p>
+<div class="swiper_product_each_2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <section class="product_row_all">
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_01.gif" width="340" alt="340X340" id="today_01">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        바로 지금, 간절기에 딱! all color🖤 FREE 티셔츠
+            
+                    </p>
+            
+                    <p id="p_box_font_03">
+                        19,800원
+                    </p>
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_01.png">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_01.png">
+            
+                </div>
             </div>
-
-        <p id="p_box_color">
-            <content>
-                <img src="./color_box_today_04.png" >
-            </content>
-
-        </p>
-
-        <p id="p_box_font_04">
-            <img src="./today_rate_04.png">
-
-    </div>
-    <div class="see_all">
-        <p id="see_all_text">전체보기</p>
-    
-       <span class="material-symbols-outlined" id="direction">
-        
-         chevron_right
-            </span>
-    </div>
-    
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_02.gif" width="340" alt="340X480" id="today_02">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        개강룩❤️‍🔥 기본핏 와이셔츠와 데님팬츠 세트 할인!
+            
+                    </p>
+            
+                    <div class="sale_box">
+                    <p id="p_box_font_03">
+                       <strike>59,900원</strike>
+                        &nbsp;<p id="sale_percent">23%</p>&nbsp; 46,000원
+                    </p>
+                    </div>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_02.png">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_02.png">
+            
+                </div>
+            </div>
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_03.gif" width="340" alt="340X340"  id="today_03">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        보장된 핏! 라인을 살리는 데님 스키니진
+                    </p>
+            
+            
+                    <p id="p_box_font_03">
+                        39,800원
+                    </p>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_03.png" width="25" alt="25*10">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_03.png">
+            
+                </div>
+            </div>
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_04.gif" width="340" alt="340X340" id="today_04">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        크롭 포인트 단가라 티셔츠(긴팔, all color)
+                    </p>
+            
+                    <div class="sale_box">
+                        <p id="p_box_font_03">
+                           <strike>19,900원</strike>
+                            &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
+                        </p>
+                        </div>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_04.png" >
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_04.png">
+            
+                </div>
+                <div class="see_all">
+                    <p id="see_all_text">전체보기</p>
+                
+                   <span class="material-symbols-outlined" id="direction">
+                    
+                     chevron_right
+                        </span>
+                </div>
+                
+            </div>
+            
+            </section>
+            
+      </div>
+      <div class="swiper-slide">
+        <section class="product_row_all">
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_01.gif" width="340" alt="340X340" id="today_01">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        바로 지금, 간절기에 딱! all color🖤 FREE 티셔츠
+            
+                    </p>
+            
+                    <p id="p_box_font_03">
+                        19,800원
+                    </p>
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_01.png">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_01.png">
+            
+                </div>
+            </div>
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_02.gif" width="340" alt="340X480" id="today_02">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        개강룩❤️‍🔥 기본핏 와이셔츠와 데님팬츠 세트 할인!
+            
+                    </p>
+            
+                    <div class="sale_box">
+                    <p id="p_box_font_03">
+                       <strike>59,900원</strike>
+                        &nbsp;<p id="sale_percent">23%</p>&nbsp; 46,000원
+                    </p>
+                    </div>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_02.png">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_02.png">
+            
+                </div>
+            </div>
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_03.gif" width="340" alt="340X340"  id="today_03">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        보장된 핏! 라인을 살리는 데님 스키니진
+                    </p>
+            
+            
+                    <p id="p_box_font_03">
+                        39,800원
+                    </p>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_03.png" width="25" alt="25*10">
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_03.png">
+            
+                </div>
+            </div>
+            
+            <div class="product_col_each">
+                <p id="p_box_img">
+                    <a href="#">
+                        <img src="./today_img_04.gif" width="340" alt="340X340" id="today_04">
+                    </a>
+                </p>
+            
+                <div id="p_box_font_all">
+            
+                    <p id="p_box_font_01">
+                        크롭 포인트 단가라 티셔츠(긴팔, all color)
+                    </p>
+            
+                    <div class="sale_box">
+                        <p id="p_box_font_03">
+                           <strike>19,900원</strike>
+                            &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
+                        </p>
+                        </div>
+            
+                    <p id="p_box_color">
+                        <content>
+                            <img src="./color_box_today_04.png" >
+                        </content>
+            
+                    </p>
+            
+                    <p id="p_box_font_04">
+                        <img src="./today_rate_04.png">
+            
+                </div>
+                <div class="see_all">
+                    <p id="see_all_text">전체보기</p>
+                
+                   <span class="material-symbols-outlined" id="direction">
+                    
+                     chevron_right
+                        </span>
+                </div>
+                
+            </div>
+            
+            </section> 
+      </div>
+    </div>  
 </div>
-
-</section>
+</div>
 
 <div class="gap_w_120">
     <!--여백-->
@@ -705,58 +1091,36 @@
     <!--여백-->
 </div>
 
-
-
 <!--미들배너 슬라이드-->
-
-</div>
-
-<div id="container">
-    <div class="slide_wrap">
-      <div class="slide_box">
-        <div class="slide_list clearfix">
-          <div class="slide_content slide01">
-            <img src="./middle_banner7_blank.png">
-
-
-          </div>
-
-          <div class="slide_content slide02">
-            <img src="./middle_banner8_blank.png">
-
-          </div>
-          <div class="slide_content slide03">
-            <img src="./middle_banner9_blank.png">
-
-          </div>
-          <div class="slide_content slide04">
-            <img src="./middle_banner5_balnk.png">
-
-          </div>
-          <div class="slide_content slide05">
-            <img src="./middle_banner6_blank.png">
-
-          </div>
-
-          
+<!--bottom_banner-->
+<div class="swiper_middle_banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+            <div class="middle_banner_box">
+                <div class="middle_banner">
+                    <img src="./middle_banner10.png">
+                    <img src="./middle_banner5.png">
+                    </div>
+                </div>
         </div>
-        <!-- // .slide_list -->
-      </div>
-      <!-- // .slide_box -->
-      <div class="slide_btn_box">
-        <button type="button" class="slide_btn_prev"><span class="material-symbols-outlined" id="arrow_left"> arrow_back_ios </span></button>
-        <button type="button" class="slide_btn_next"><span class="material-symbols-outlined" id="arrow_right">
-            arrow_forward_ios
-            </span></button>
-      </div>
-      <!-- // .slide_btn_box -->
-      <ul class="slide_pagination"></ul>
-      <!-- // .slide_pagination -->
+      <div class="swiper-slide">
+        <div class="middle_banner_box">
+            <div class="middle_banner">
+                <img src="./middle_banner8.png">
+                <img src="./middle_banner7.png">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="middle_banner_box">
+                <div class="middle_banner">
+                    <img src="./middle_banner4.png">
+                    <img src="./middle_banner6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- // .slide_wrap -->
-  </div>
-  <!-- // .container -->
-</section>
 
 
 <!--여백-->   
@@ -775,150 +1139,297 @@
         </div>
     </div>
 
-<section class="product_row_all">
-    
-        
-    <div class="product_col_each">
-        <p id="p_box_img">
-            <a href="#">
-                <img src="./spring_img_01.gif" width="340" alt="340X480" id="spring_01">
-            </a>
-        </p>
-
-        <div id="p_box_font_all">
-
-            <p id="p_box_font_01">
-                사랑스러운 무드 핑크 뜨개 니트💗
-
-            </p>
-
-            <p id="p_box_font_03">
-                29,800원
-            </p>
-            <p id="p_box_color">
-                <content>
-                    <img src="./color_box_spring_01.png">
-                </content>
-
-            </p>
-
-            <p id="p_box_font_04">
-                <img src="./spring_rate_01.png">
-
-        </div>
-    </div>
-
-    <div class="product_col_each">
-        <p id="p_box_img">
-            <a href="#">
-                <img src="./spring_img_02.gif" width="340" alt="340X480" id="spring_02">
-            </a>
-        </p>
-
-        <div id="p_box_font_all">
-
-            <p id="p_box_font_01">
-                [시선집중!👀 파티룩✨] 스프링 옐로우 무드 롱 OPS
-
-            </p>
-
-            <div class="sale_box">
-            <p id="p_box_font_03">
-            <strike>99,900원</strike>
-                &nbsp;<p id="sale_percent">25%</p>&nbsp; 79,900원
-            </p>
-            </div>
-
-            <p id="p_box_color">
-                <content>
-                    <img src="./onecolor.png">
-                </content>
-
-            </p>
-
-            <p id="p_box_font_04">
-                <img src="./spring_rate_02.png">
-
-        </div>
-    </div>
-
-    
-    
-
-    <div class="product_col_each">
-        <p id="p_box_img">
-            <a href="#">
-                <img src="./spring_img_03.gif" width="340" alt="340X480" id="spring_03">
-            </a>
-        </p>
-
-        <div id="p_box_font_all">
-
-            <p id="p_box_font_01">
-                Flower Point 🌼화이트 플라워🌼 OPS
-            </p>
-
-
-            <p id="p_box_font_03">
-                39,800원
-            </p>
-
-            <p id="p_box_color">
-                <content>
-                    <img src="./blak_white_color_box.png" >
-                </content>
-
-            </p>
-
-            <p id="p_box_font_04">
-                <img src="./spring_rate_03.png">
-
-        </div>
-    </div>
-
-    <div class="product_col_each">
-        <p id="p_box_img">
-            <a href="#">
-                <img src="./spring_img_04.gif" width="340" alt="340X340" id="spring_04">
-            </a>
-        </p>
-
-        <div id="p_box_font_all">
-
-            <p id="p_box_font_01">
-                쉬폰 플라워🌺 OPS
-            </p>
-
-            <div class="sale_box">
-                <p id="p_box_font_03">
-                <strike>19,900원</strike>
-                    &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
-                </p>
+    <div class="swiper_product_each_2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_01.gif" width="340" alt="340X340" id="today_01">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            바로 지금, 간절기에 딱! all color🖤 FREE 티셔츠
+                
+                        </p>
+                
+                        <p id="p_box_font_03">
+                            19,800원
+                        </p>
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_01.png">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_01.png">
+                
+                    </div>
                 </div>
-
-            <p id="p_box_color">
-                <content>
-                    <img src="./blak_white_color_box.png">
-                </content>
-
-            </p>
-
-            <p id="p_box_font_04">
-                <img src="./spring_rate_04.png">
-
-        </div>
-        <div class="see_all">
-            <p id="see_all_text">전체보기</p>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_02.gif" width="340" alt="340X480" id="today_02">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            개강룩❤️‍🔥 기본핏 와이셔츠와 데님팬츠 세트 할인!
+                
+                        </p>
+                
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                           <strike>59,900원</strike>
+                            &nbsp;<p id="sale_percent">23%</p>&nbsp; 46,000원
+                        </p>
+                        </div>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_02.png">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_02.png">
+                
+                    </div>
+                </div>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_03.gif" width="340" alt="340X340"  id="today_03">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            보장된 핏! 라인을 살리는 데님 스키니진
+                        </p>
+                
+                
+                        <p id="p_box_font_03">
+                            39,800원
+                        </p>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_03.png" width="25" alt="25*10">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_03.png">
+                
+                    </div>
+                </div>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_04.gif" width="340" alt="340X340" id="today_04">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            크롭 포인트 단가라 티셔츠(긴팔, all color)
+                        </p>
+                
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                               <strike>19,900원</strike>
+                                &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
+                            </p>
+                            </div>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_04.png" >
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_04.png">
+                
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                    
+                       <span class="material-symbols-outlined" id="direction">
+                        
+                         chevron_right
+                            </span>
+                    </div>
+                    
+                </div>
+                
+                </section>
+                
+          </div>
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_01.gif" width="340" alt="340X480" id="cardigan_01">
+                        </a>
+                    </p>
         
-        <span class="material-symbols-outlined" id="direction">
-            
-            chevron_right
-                </span>
-        </div>
+                    <div id="p_box_font_all">
         
+                        <p id="p_box_font_01">
+                            따뜻🔥 포근 꽈배기 니트 가디건
+        
+                        </p>
+        
+                        <p id="p_box_font_03">
+                            28,900원
+                        </p>
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_cardigan_01.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_01.png">
+        
+                    </div>
+                </div>
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_02.gif" width="340" alt="340X480" id="cardigan_02">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            [HIP MOOD💋] 빈티지 뜨개 포인트 가디건
+        
+                        </p>
+        
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                        <strike>39,900원</strike>
+                            &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
+                        </p>
+                        </div>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./onecolor.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_02.png">
+        
+                    </div>
+                </div>
+        
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_03.gif" width="340" alt="340X480" id="cardigan_03">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            포인트 레드 컬러 포근 꽈배기 니트 가디건
+                        </p>
+        
+        
+                        <p id="p_box_font_03">
+                            39,800원
+                        </p>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./onecolor.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_03.png">
+        
+                    </div>
+                </div>
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_04.gif" width="340" alt="340X340" id="cardigan_04">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            폭신 촉감 러블리 파스텔 컬러 니트 가디건
+                        </p>
+        
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>29,900원</strike>
+                                &nbsp;<p id="sale_percent">15%</p>&nbsp; 25,400원
+                            </p>
+                            </div>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_cardigan_04.png" >
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_04.png">
+        
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                    
+                    <span class="material-symbols-outlined" id="direction">
+                        
+                        chevron_right
+                            </span>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>  
     </div>
+</div>
 
-    </section>
+
+    
+
 
     <!--여백-->   
     <div class="gap_w_120">
@@ -935,146 +1446,298 @@
         </div>
     </div>
 
-    <!--spring best-->
+    <!--cardigan best-->
 
-        <section class="product_row_all">
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./cardian_img_01.gif" width="340" alt="340X480" id="cardigan_01">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    따뜻🔥 포근 꽈배기 니트 가디건
-
-                </p>
-
-                <p id="p_box_font_03">
-                    28,900원
-                </p>
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_cardigan_01.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./cardigan_rate_01.png">
-
-            </div>
-        </div>
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./cardian_img_02.gif" width="340" alt="340X480" id="cardigan_02">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    [HIP MOOD💋] 빈티지 뜨개 포인트 가디건
-
-                </p>
-
-                <div class="sale_box">
-                <p id="p_box_font_03">
-                <strike>39,900원</strike>
-                    &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
-                </p>
-                </div>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./onecolor.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./cardigan_rate_02.png">
-
-            </div>
-        </div>
-
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./cardian_img_03.gif" width="340" alt="340X480" id="cardigan_03">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    포인트 레드 컬러 포근 꽈배기 니트 가디건
-                </p>
-
-
-                <p id="p_box_font_03">
-                    39,800원
-                </p>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./onecolor.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./cardigan_rate_03.png">
-
-            </div>
-        </div>
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./cardian_img_04.gif" width="340" alt="340X340" id="cardigan_04">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    폭신 촉감 러블리 파스텔 컬러 니트 가디건
-                </p>
-
-                <div class="sale_box">
-                    <p id="p_box_font_03">
-                    <strike>29,900원</strike>
-                        &nbsp;<p id="sale_percent">15%</p>&nbsp; 25,400원
+    <div class="swiper_product_each_2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_01.gif" width="340" alt="340X340" id="today_01">
+                        </a>
                     </p>
-                    </div>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_cardigan_04.png" >
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./cardigan_rate_04.png">
-
-            </div>
-            <div class="see_all">
-                <p id="see_all_text">전체보기</p>
-            
-            <span class="material-symbols-outlined" id="direction">
                 
-                chevron_right
-                    </span>
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            바로 지금, 간절기에 딱! all color🖤 FREE 티셔츠
+                
+                        </p>
+                
+                        <p id="p_box_font_03">
+                            19,800원
+                        </p>
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_01.png">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_01.png">
+                
+                    </div>
+                </div>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_02.gif" width="340" alt="340X480" id="today_02">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            개강룩❤️‍🔥 기본핏 와이셔츠와 데님팬츠 세트 할인!
+                
+                        </p>
+                
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                           <strike>59,900원</strike>
+                            &nbsp;<p id="sale_percent">23%</p>&nbsp; 46,000원
+                        </p>
+                        </div>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_02.png">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_02.png">
+                
+                    </div>
+                </div>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_03.gif" width="340" alt="340X340"  id="today_03">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            보장된 핏! 라인을 살리는 데님 스키니진
+                        </p>
+                
+                
+                        <p id="p_box_font_03">
+                            39,800원
+                        </p>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_03.png" width="25" alt="25*10">
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_03.png">
+                
+                    </div>
+                </div>
+                
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./today_img_04.gif" width="340" alt="340X340" id="today_04">
+                        </a>
+                    </p>
+                
+                    <div id="p_box_font_all">
+                
+                        <p id="p_box_font_01">
+                            크롭 포인트 단가라 티셔츠(긴팔, all color)
+                        </p>
+                
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                               <strike>19,900원</strike>
+                                &nbsp;<p id="sale_percent">10%</p>&nbsp; 17,900원
+                            </p>
+                            </div>
+                
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_today_04.png" >
+                            </content>
+                
+                        </p>
+                
+                        <p id="p_box_font_04">
+                            <img src="./today_rate_04.png">
+                
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                    
+                       <span class="material-symbols-outlined" id="direction">
+                        
+                         chevron_right
+                            </span>
+                    </div>
+                    
+                </div>
+                
+                </section>
+                
+          </div>
+          <div class="swiper-slide">
+            <section class="product_row_all">
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_01.gif" width="340" alt="340X480" id="cardigan_01">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            따뜻🔥 포근 꽈배기 니트 가디건
+        
+                        </p>
+        
+                        <p id="p_box_font_03">
+                            28,900원
+                        </p>
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_cardigan_01.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_01.png">
+        
+                    </div>
+                </div>
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_02.gif" width="340" alt="340X480" id="cardigan_02">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            [HIP MOOD💋] 빈티지 뜨개 포인트 가디건
+        
+                        </p>
+        
+                        <div class="sale_box">
+                        <p id="p_box_font_03">
+                        <strike>39,900원</strike>
+                            &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
+                        </p>
+                        </div>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./onecolor.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_02.png">
+        
+                    </div>
+                </div>
+        
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_03.gif" width="340" alt="340X480" id="cardigan_03">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            포인트 레드 컬러 포근 꽈배기 니트 가디건
+                        </p>
+        
+        
+                        <p id="p_box_font_03">
+                            39,800원
+                        </p>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./onecolor.png">
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_03.png">
+        
+                    </div>
+                </div>
+        
+                <div class="product_col_each">
+                    <p id="p_box_img">
+                        <a href="#">
+                            <img src="./cardian_img_04.gif" width="340" alt="340X340" id="cardigan_04">
+                        </a>
+                    </p>
+        
+                    <div id="p_box_font_all">
+        
+                        <p id="p_box_font_01">
+                            폭신 촉감 러블리 파스텔 컬러 니트 가디건
+                        </p>
+        
+                        <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>29,900원</strike>
+                                &nbsp;<p id="sale_percent">15%</p>&nbsp; 25,400원
+                            </p>
+                            </div>
+        
+                        <p id="p_box_color">
+                            <content>
+                                <img src="./color_box_cardigan_04.png" >
+                            </content>
+        
+                        </p>
+        
+                        <p id="p_box_font_04">
+                            <img src="./cardigan_rate_04.png">
+        
+                    </div>
+                    <div class="see_all">
+                        <p id="see_all_text">전체보기</p>
+                    
+                    <span class="material-symbols-outlined" id="direction">
+                        
+                        chevron_right
+                            </span>
+                    </div>
+                </div>
+            </section>
             </div>
-        </div>
+        </div>  
     </div>
+</div>
+    
+
+    
 
         </section>
 
@@ -1095,146 +1758,296 @@
                 </div>
             </div>
         </div>
-        
-        <section class="product_row_all">
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./pants_img_01.gif" width="340" alt="340X480" id="pants_01">
-                </a>
-            </p>
 
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    [Always Best💘] 기본 연청 데님 일자핏 팬츠
-
-                </p>
-
-                <p id="p_box_font_03">
-                    38,900원
-                </p>
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_denim(light).png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./pants_rate_01.png">
-
-            </div>
-        </div>
-        
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./pants_img_02.gif" width="340" alt="340X480" id="pants_02">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    유니크한 디자인✨ 거꾸로 데님 팬츠
-
-                </p>
-
-                <div class="sale_box">
-                <p id="p_box_font_03">
-                <strike>39,900원</strike>
-                    &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
-                </p>
-                </div>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_denim.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./pants_rate_02.png">
-
-            </div>
-        </div>
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./pants_img_03.gif" width="340" alt="340X480" id="pants_03">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01"> 
-                    언제나 포근하게🌙 극세사 촉감 밍크 잠옷
-                </p>
-
-
-                <p id="p_box_font_03">
-                    39,800원
-                </p>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_pants_03.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./pants_rate_03.png">
-
-            </div>
-        </div>
-
-        <div class="product_col_each">
-            <p id="p_box_img">
-                <a href="#">
-                    <img src="./pants_img_04.gif" width="340" alt="340X340" id="pants_04">
-                </a>
-            </p>
-
-            <div id="p_box_font_all">
-
-                <p id="p_box_font_01">
-                    어디에나 매치되는 와이드 청데님 팬츠
-                </p>
-
-                <div class="sale_box">
-                    <p id="p_box_font_03">
-                    <strike>39,900원</strike>
-                        &nbsp;<p id="sale_percent">15%</p>&nbsp; 35,900원
-                    </p>
-                    </div>
-
-                <p id="p_box_color">
-                    <content>
-                        <img src="./color_box_denim.png">
-                    </content>
-
-                </p>
-
-                <p id="p_box_font_04">
-                    <img src="./pants_rate_04.png">
-
-            </div>
-            <div class="see_all">
-                <p id="see_all_text">전체보기</p>
+        <div class="swiper_product_each_2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <section class="product_row_all">
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./pants_img_01.gif" width="340" alt="340X480" id="pants_01">
+                            </a>
+                        </p>
             
-            <span class="material-symbols-outlined" id="direction">
-                
-                chevron_right
-                    </span>
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                [Always Best💘] 기본 연청 데님 일자핏 팬츠
+            
+                            </p>
+            
+                            <p id="p_box_font_03">
+                                38,900원
+                            </p>
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_denim(light).png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./pants_rate_01.png">
+            
+                        </div>
+                    </div>
+                    
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./pants_img_02.gif" width="340" alt="340X480" id="pants_02">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                유니크한 디자인✨ 거꾸로 데님 팬츠
+            
+                            </p>
+            
+                            <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>39,900원</strike>
+                                &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
+                            </p>
+                            </div>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_denim.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./pants_rate_02.png">
+            
+                        </div>
+                    </div>
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./pants_img_03.gif" width="340" alt="340X480" id="pants_03">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01"> 
+                                언제나 포근하게🌙 극세사 촉감 밍크 잠옷
+                            </p>
+            
+            
+                            <p id="p_box_font_03">
+                                39,800원
+                            </p>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_pants_03.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./pants_rate_03.png">
+            
+                        </div>
+                    </div>
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./pants_img_04.gif" width="340" alt="340X340" id="pants_04">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                어디에나 매치되는 와이드 청데님 팬츠
+                            </p>
+            
+                            <div class="sale_box">
+                                <p id="p_box_font_03">
+                                <strike>39,900원</strike>
+                                    &nbsp;<p id="sale_percent">15%</p>&nbsp; 35,900원
+                                </p>
+                                </div>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_denim.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./pants_rate_04.png">
+            
+                        </div>
+                        <div class="see_all">
+                            <p id="see_all_text">전체보기</p>
+                        
+                        <span class="material-symbols-outlined" id="direction">
+                            
+                            chevron_right
+                                </span>
+                        </div>
+                    </div>
+                </section>
             </div>
+            
+              <div class="swiper-slide">
+                <section class="product_row_all">
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./cardian_img_01.gif" width="340" alt="340X480" id="cardigan_01">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                따뜻🔥 포근 꽈배기 니트 가디건
+            
+                            </p>
+            
+                            <p id="p_box_font_03">
+                                28,900원
+                            </p>
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_cardigan_01.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./cardigan_rate_01.png">
+            
+                        </div>
+                    </div>
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./cardian_img_02.gif" width="340" alt="340X480" id="cardigan_02">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                [HIP MOOD💋] 빈티지 뜨개 포인트 가디건
+            
+                            </p>
+            
+                            <div class="sale_box">
+                            <p id="p_box_font_03">
+                            <strike>39,900원</strike>
+                                &nbsp;<p id="sale_percent">5%</p>&nbsp; 37,900원
+                            </p>
+                            </div>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./onecolor.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./cardigan_rate_02.png">
+            
+                        </div>
+                    </div>
+            
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./cardian_img_03.gif" width="340" alt="340X480" id="cardigan_03">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                포인트 레드 컬러 포근 꽈배기 니트 가디건
+                            </p>
+            
+            
+                            <p id="p_box_font_03">
+                                39,800원
+                            </p>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./onecolor.png">
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./cardigan_rate_03.png">
+            
+                        </div>
+                    </div>
+            
+                    <div class="product_col_each">
+                        <p id="p_box_img">
+                            <a href="#">
+                                <img src="./cardian_img_04.gif" width="340" alt="340X340" id="cardigan_04">
+                            </a>
+                        </p>
+            
+                        <div id="p_box_font_all">
+            
+                            <p id="p_box_font_01">
+                                폭신 촉감 러블리 파스텔 컬러 니트 가디건
+                            </p>
+            
+                            <div class="sale_box">
+                                <p id="p_box_font_03">
+                                <strike>29,900원</strike>
+                                    &nbsp;<p id="sale_percent">15%</p>&nbsp; 25,400원
+                                </p>
+                                </div>
+            
+                            <p id="p_box_color">
+                                <content>
+                                    <img src="./color_box_cardigan_04.png" >
+                                </content>
+            
+                            </p>
+            
+                            <p id="p_box_font_04">
+                                <img src="./cardigan_rate_04.png">
+            
+                        </div>
+                        <div class="see_all">
+                            <p id="see_all_text">전체보기</p>
+                        
+                        <span class="material-symbols-outlined" id="direction">
+                            
+                            chevron_right
+                                </span>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </div>  
         </div>
-
-        </section>
+    </div>
+        
+    
+        
 
         <!--여백-->   
         <div class="gap_w_120">
@@ -1461,12 +2274,6 @@
         </div>
       </div>  
     </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- If we need scrollbar -->
-
 </div>
 
 
@@ -1805,26 +2612,117 @@ function showSlides(n) {
 
 <script>
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   loop: true,
-﻿  slidesPerView: 1,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    ﻿  slidesPerView: 1,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+      autoplay:{delay:2200,disableOnInteraction: false,},
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+      speed:500
+
+
   },
+);
+</script>
+
+<script>
+    var swiper_product = new Swiper('.swiper_product_each', {
+    
+      loop: true,
+    ﻿  slidesPerView: 1,
+
+      autoplay:{delay:2800,disableOnInteraction: false,},
+
+      speed:500,
+
+      pagination: {
+      }
+    })
+
+</script>
+
+<script>
+    var swiper_product_2 = new Swiper('.swiper_product_each_2', {
+    
+    loop: true,
+  ﻿  slidesPerView: 1,
+
+    autoplay:{delay:2900,disableOnInteraction: false,},
+
+    speed:500
+
+  });
+
+</script>
+
+<script>
+    var swiper_product_3 = new Swiper('.swiper_product_each_3', {
+    
+    loop: true,
+  ﻿  slidesPerView: 1,
+
+    autoplay:{delay:2900,disableOnInteraction: false,},
+
+    speed:500
+
+  });
+
+</script>
+
+<script>
+    const swiper_middle_banner = new Swiper('.swiper_middle_banner', {
+      loop: true,
+        ﻿  slidesPerView: 1,
+    
+          autoplay:{delay:2200,disableOnInteraction: false,},
+    
+          speed:500,
+    
+      },
+    );
+</script>
+
+<script>
+    $(document).ready(function(){
+  var currentPosition = parseInt($(".side_bar").css("top"));
+  $(window).scroll(function() {
+    var position = $(window).scrollTop(); 
+    $(".side_bar").stop().animate({"top":position+currentPosition+"px"},500);
+  });
 });
 </script>
+
+<script>
+    $(document).ready(function(){ //이 코딩 필수
+            $("button").click(function() {
+            
+                $(".side_bar_plus").css("opacity","1");
+            });
+        });
+    
+</script>
+
+<script>
+    $(document).ready(function(){
+  var currentPosition = parseInt($(".side_bar").css("top"));
+  $(window).scroll(function() {
+    var position = $(window).scrollTop(); 
+    $(".side_bar").stop().animate({"top":position+currentPosition+"px"},500);
+  });
+});
+</script>
+
+<script>
+    $(document).ready(function(){ //이 코딩 필수
+            $("#close").click(function() {
+            
+                $(".side_bar_plus").css("opacity","0");
+            });
+        });
+    
+</script>
+    
+</script>
+
 
 
 
