@@ -2692,8 +2692,10 @@ const swiper = new Swiper('.swiper', {
 <script>
     $(document).ready(function(){ //이 코딩 필수
             $("button").click(function() {
+                
             
-                $(".side_bar_plus").css("opacity","1");
+                $(".side_bar_plus").css("opacity","1").css("transition","0.3s");
+
             });
         });
     
@@ -2713,7 +2715,7 @@ const swiper = new Swiper('.swiper', {
     $(document).ready(function(){ //이 코딩 필수
             $("#close").click(function() {
             
-                $(".side_bar_plus").css("opacity","0");
+                $(".side_bar_plus").css("opacity","0").css("transition","0.3s");
             });
         });
     

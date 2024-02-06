@@ -142,12 +142,12 @@ a:hover{
 
 .product_all_text_box{
     position: relative;
-    margin: 0 auto;
     padding: 0 auto;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin-top: -1rem;
 }
 
 .product_left_box{
@@ -182,7 +182,7 @@ a:hover{
         ;
         position: relative;
         width: 100px;
-        height: 100px;
+        height: 110px;
         border: 1px #b9b5b5 solid;
         background-color: white;
         display: flex;
@@ -192,11 +192,10 @@ a:hover{
 
     #rate_box_left{
         margin: 0 auto;
-        padding: 0 auto
-        ;
+        padding: 0 auto;
         position: relative;
         width: 100px;
-        height: 100px;
+        height: 110px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -212,6 +211,7 @@ a:hover{
     }
 
     #review_text{
+        
         position: absolute;
         color: #333;
         font-size: 2rem;
@@ -222,7 +222,7 @@ a:hover{
 
     #photo_review_best_all{
         width: 447px;
-        height: 100px;
+        height: 110px;
         background-color: white;
         display: flex;
         flex-flow: column nowrap;
@@ -294,12 +294,16 @@ a:hover{
 
 
     #product_title_text{
-        margin-top: -0.2rem;
+        font-family: 'NanumSquareNeo-Variable';
         margin-left: -5rem;
         font-size: 1.1rem;
         width: 670px;
-        height: 20px;
+        height: 25px;
         float: right;
+    }
+
+    #description{
+        font-family: 'NanumSquareNeo-Variable';
     }
 
     #product_price{
@@ -371,6 +375,7 @@ a:hover{
     }
 
     #color_box1{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -385,6 +390,7 @@ a:hover{
     }
 
     #color_box1:hover{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -393,10 +399,11 @@ a:hover{
         line-height: 40px;
         color: #a0a190;
         font-weight: bold;
-        color: #dbb55c;
+        color: black;
 
     }
     #color_box2{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -409,6 +416,7 @@ a:hover{
     }
 
     #color_box2:hover{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -417,11 +425,12 @@ a:hover{
         line-height: 40px;
         color: #a0a190;
         font-weight: bold;
-        color: #dbb55c;
+        color: #9392ca;
 
     }
 
     #color_box3{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -434,6 +443,7 @@ a:hover{
     }
 
     #color_box3:hover{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -442,11 +452,12 @@ a:hover{
         line-height: 40px;
         color: #a0a190;
         font-weight: bold;
-        color: #dbb55c;
+        color: rgb(163, 217, 226);
 
     }
 
     #color_box4{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -459,6 +470,7 @@ a:hover{
     }
 
     #color_box4:hover{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -467,11 +479,12 @@ a:hover{
         line-height: 40px;
         color: #a0a190;
         font-weight: bold;
-        color: #dbb55c;
+        color: #5cc2db;
 
     }
 
     #color_box5{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
@@ -484,13 +497,14 @@ a:hover{
     }
 
     #color_box5:hover{
+        font-family: 'NanumSquareNeo-Variable';
         width: 60px;
         height: 40px;
         background-color: white;
         border: 1px solid #757575;
         text-align: center;
         line-height: 40px;
-        color: #dbb55c;
+        color: rgb(92, 211, 219);
 
     }
 
@@ -600,7 +614,7 @@ a:hover{
 
     #shop{
         position: absolute;
-        border: 2px solid #757575;
+        border: 1.8px solid #757575;
         width: 50px;
         height: 50px;
         margin-left: 439px;
@@ -613,7 +627,7 @@ a:hover{
 
     #like{
         position: absolute;
-        border: 2px solid #757575;
+        border: 1.8px solid #757575;
         width: 50px;
         height: 50px;
         margin-left: 500px;
@@ -818,6 +832,522 @@ a:hover{
                 
                 font-weight: bold;
                 color: #bfb29f
+            }
+
+            #close_button{
+                background-color: rgb(255, 255, 255,0.5);
+                border: none;
+                margin-top: 5.5rem;
+                margin-left: 18rem;
+            }
+
+            .mini_box{
+                border: 1px solid rgb(194, 175, 165);
+                width: 350px;
+                height: 600px;
+                z-index: 99999;
+                background-color: rgb(255, 255, 255);
+                position: fixed;
+                float: right;
+            }
+
+            .product_title_all_mini{
+                width: 300px;
+                height: 500px;
+                margin-left: 1.5rem;
+                
+            }
+
+            #shop_button{
+                width: 60px;
+                height: 60px;
+                z-index: 998;
+                border-radius: 55px;
+                background-color:  rgb(194, 175, 165);
+                position: fixed;
+                float: right;
+                border: none;
+                color: white;
+                float: right;
+                margin-left: 115rem;
+                margin-top: 48rem;
+                display: flex;
+                justify-content: center;
+                line-height: 55px;
+                opacity: 0;
+            }
+
+            .top_button_wrap{
+                background-color: red;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                margin-left: -10rem;
+            }
+
+            #top_button{
+                font-family: 'NanumSquareNeo-Variable';
+                font-weight: bold;
+                width: 60px;
+                height: 60px;
+                z-index: 998;
+                border-radius: 55px;
+                background-color:  rgb(194, 175, 165);
+                position: fixed;
+                float: right;
+                border: none;
+                color: white;
+                float: right;
+                margin-left: 115rem;
+                margin-top: 48rem;
+                display: flex;
+                justify-content: center;
+                line-height: 55px;
+                opacity: 0;
+            }
+
+            .shop_button_wrap{
+                background-color: red;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                margin-left: -10rem;
+            }
+        
+            
+        
+            
+
+            .mini_box_wrap{
+                background-color: red;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+            }
+        
+        
+            #product_title_text_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                font-size: 0.9rem;
+                width: 300px;
+                height: 20px;
+                line-height: 20px;
+                text-align: left;
+            }
+        
+            #description_mini{
+                font-family: 'NanumSquareNeo-Variable';
+            }
+        
+            #product_price_mini{
+                text-align: left;
+                padding-top: -0.1rem;
+            }
+        
+            #product_price_text_mini{
+                height: 20px;
+                line-height: 20px;
+                color: orangered;
+                font-weight: bold;
+            }
+
+            #bell_box_mini{
+                position: absolute;
+                width: 200px;
+                height: 20px;
+                line-height: 20px;
+                margin-left: 80px;
+                margin-top:15px;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+        
+            .material-symbols-outlined_mini{
+                font-size: 1.2rem;
+            }
+        
+            #re_mini{
+                margin-top: 20rem;
+            }
+        
+            #product_price_mini{
+                width: 200px;
+                height: 30px;
+            }
+        
+            #reward_mini{
+                font-size: 0.9rem;
+            }
+        
+            #description_mini{
+                font-size: 0.9rem;
+                color: #5b5c51;
+                
+            }
+        
+            #delivery_mini{
+                margin-top: -0.2rem;
+                font-size: 0.9rem;
+                font-weight: bold;
+                float: left;
+                
+            }
+        
+            #color_title_mini{
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: #4d4d4d;
+                
+            }
+        
+            #color_mini{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2px;
+            }
+        
+            #color_box1_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+        
+                
+            }
+        
+            #color_box1_mini:hover{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #757575;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+                color: black;
+        
+            }
+            #color_box2_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            #color_box2_mini:hover{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #757575;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+                color: #9392ca;
+        
+            }
+        
+            #color_box3_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            #color_box3_mini:hover{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #757575;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+                color: rgb(163, 217, 226);
+        
+            }
+        
+            #color_box4_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            #color_box4_mini:hover{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #757575;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+                color: #5cc2db;
+        
+            }
+        
+            #color_box5_mini{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            #color_box5_mini:hover{
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #757575;
+                text-align: center;
+                line-height: 40px;
+                color: rgb(92, 211, 219);
+        
+            }
+        
+        
+            
+        
+            #ver_mini{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2px;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        
+            #ver_1_mini{
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            
+            #ver_2_mini{
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+        
+            
+            #ver_3_mini{
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+        
+            
+            #ver_4_mini{
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid #a0a190;
+                text-align: center;
+                line-height: 40px;
+                color: #a0a190;
+                font-weight: bold;
+        
+            }
+        
+            #size_mini{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2px;
+                display: flex;
+                flex-flow: row nowrap;
+                color: #4d4d4d;
+            }
+        
+            #total_box_mini{
+                width: 650px;
+                height: 100px;
+                font-weight: bold;
+                display: flex;
+                flex-flow: row nowrap;
+                color: #4d4d4d;
+        
+            }
+        
+            #total_result_mini{
+
+                color: #4d4d4d;
+            }
+
+            #buy_mini{
+                width: 300px;
+                height: 30px;
+                background-color: #7e6132;
+            }
+        
+        
+        
+            #buy_button_mini{
+                background-color: #7e6132;
+                color: white;
+                line-height: 55px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: -3.5rem;
+            }
+        
+            #shop_mini{
+                position: absolute;
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 60px;
+                position: fixed;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                margin-left: 108rem;
+                z-index: 999;
+                font-style: bold;
+                background-color:#998566;
+                border-radius: 50px;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            #shop_mini:hover{
+                opacity: 0;
+            }
+
+            #shop_mini_text{
+                line-height: 60px;
+                font-size: 2rem;
+                width: 60px;
+                height: 60px;
+            }
+
+            .shop_mini_hover{
+                position: absolute;
+                font-family: 'NanumSquareNeo-Variable';
+                width: 60px;
+                height: 60px;
+                position: fixed;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                margin-left: 108rem;
+                z-index: 998;
+                font-style: bold;
+                background-color:#998566;
+                border-radius: 50px;
+            }
+        
+            #close_mini{
+                position: absolute;
+                width: 30px;
+                height: 20px;
+                margin-top: -5rem;
+                text-align: center;
+                line-height: 50px;
+                color: #4d4d4d;
+                font-size: 0.5rem;
+                position: absolute;
+            }
+
+            #close_button{
+                background-color: none;
+                border: none;
+            }
+        
+            #find_size_mini{
+                background-color: white;
+                border: 1px solid #7e6132;
+                line-height: 55px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 1.8rem;
+
+                
+            }
+
+            .pay_mini{
+                display: flex;
+                flex-flow: row nowrap;
+                margin-top: 0.5rem;
+                gap: 0.5rem;
+            }
+        
+            #product_01{
+                margin: 0 auto;
+            }
+        
+            #naver_pay{
+                margin-left: 32px;
+                margin-top: 10px;
+            }
+        
+            #kakao_pay{
+                margin-left: 120px;
+                margin-top: -42px;
+            }
+        
+            #star{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                margin-left: -0.5px;
+                margin-top: 2rem;
             }
 
 
