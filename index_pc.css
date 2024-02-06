@@ -115,7 +115,7 @@ a:hover{
 #menu_each_span_m{display: none;}
 
 #menu_each_long{
-    width: 5rem;
+    width: 6rem;
     height: 75px;
     line-height: 75px;
     font-size: 0.8rem;
@@ -678,6 +678,38 @@ a:hover{
 
                         }
 
+                        #row_05:hover{
+                            content: url(./daily_best_img_05_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #row_06:hover{
+                            content: url(./daily_best_img_06_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #row_07:hover{
+                            content: url(./daily_best_img_07_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #row_08:hover{
+                            content: url(./daily_best_img_08_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
                         #today_01:hover{
                             content: url(./today_img_01_hover.png);
                             width: 340px;
@@ -710,6 +742,42 @@ a:hover{
 
                         }
 
+                        #today_05:hover{
+                            content: url(./today_img_05_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+
+                        #today_06:hover{
+                            content: url(./today_img_06_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+
+                        #today_07:hover{
+                            content: url(./today_img_07_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+
+                        #today_08:hover{
+                            content: url(./today_img_08_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+
                         #spring_01:hover{
                             content: url(./spring_img_01_hover.png);
                             width: 340px;
@@ -737,6 +805,38 @@ a:hover{
 
                         #spring_04:hover{
                             content: url(./spring_img_04_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #spring_05:hover{
+                            content: url(./spring_img_05_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #spring_06:hover{
+                            content: url(./spring_img_06_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #spring_07:hover{
+                            content: url(./spring_img_07_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #spring_08:hover{
+                            content: url(./spring_img_08_hover.png);
                             width: 340px;
                             height: 453px;
                             overflow: hidden;
@@ -775,6 +875,38 @@ a:hover{
 
                         }
 
+                        #cardigan_05:hover{
+                            content: url(./cardigan_img_05_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #cardigan_06:hover{
+                            content: url(./cardigan_img_06_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #cardigan_07:hover{
+                            content: url(./cardigan_img_07_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #cardigan_08:hover{
+                            content: url(./cardigan_img_08_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
                         #pants_01:hover{
                             content: url(./pants_img_01_hover.png);
                             width: 340px;
@@ -801,6 +933,39 @@ a:hover{
 
                         #pants_04:hover{
                             content: url(./pants_img_04_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #pants_05:hover{
+                            content: url(./pants_img_05_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+
+                        #pants_06:hover{
+                            content: url(./pants_img_06_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #pants_07:hover{
+                            content: url(./pants_img_07_hover.png);
+                            width: 340px;
+                            height: 453px;
+                            overflow: hidden;
+
+                        }
+
+                        #pants_08:hover{
+                            content: url(./pants_img_08_hover.png);
                             width: 340px;
                             height: 453px;
                             overflow: hidden;
